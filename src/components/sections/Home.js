@@ -3,8 +3,8 @@ import pikachu from "../../assets/images/pikachu-home.svg"
 const home = () => (
     <section className="content-home">
         <article className="box1-home">
-            <h2 className="inter-bold">Let's catch them all!</h2>
-            <p className="inter-medium p-welcome">Pokémon is a media franchise that originally
+            <h2 className="text-5xl font-bold underline">Let's catch them all!</h2>
+            <p className="text-5xl inter-medium p-welcome">Pokémon is a media franchise that originally
                 started out as an RPG video game, but due to its
                 popularity has managed to expand to other media
                 entertainment such as TV series, movies,

@@ -14,7 +14,7 @@ export const useFetch = (pokeApi) => {
                     throw{
                         err: true, 
                         status: res.status, 
-                        statusText: !res.statusText ? "Ocurrio un error" : res.statusText,
+                        statusText: !res.statusText ? "Something went wrong" : res.statusText,
                     };
                 }
 

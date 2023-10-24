@@ -48,12 +48,9 @@ const Pokemon = () => {
                 />}
             </div>
             <div>
-                <button className="inter-bold btn-home" onClick={useNavigate(-1)}>
-                        Test
-                </button>
-                {/* <a className="inter-bold btn-home" href="{history.back}" onClick={useNavigate(-1);}>
+                <a className="inter-bold btn-home" href="/search">
                     Back To Search
-                </a> */}
+                </a>
             </div>
         </section>
     )

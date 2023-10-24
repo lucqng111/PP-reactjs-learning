@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 const Search = () => {
     let [pokeApi, setPokeApi] = useState("https://pokeapi.co/api/v2/pokemon/");
     let {data, isPending} = useFetch(pokeApi);
-
     const [pokemons, setPokemons] = useState([]);
     const [dataFiltrada, setDataFiltrada] = useState([]);
 
@@ -28,7 +27,6 @@ const Search = () => {
                     setPokemons((pokemons) => [...pokemons, pokemon]);
                 });
             };
-            
             getPokemons(data);
         }
         else{
@@ -48,11 +46,11 @@ const Search = () => {
             }
             getFilterPokemons();
         }
-    }, [data, dataFiltrada]);//hooks se ejecutara cada vez que varie data o dataFiltrada
+    }, [data, dataFiltrada]);
 
     const handleLinks = (e, url) => {
         e.preventDefault();
-        setPokemons([]);//para que me limpie los pasados pokemones paginados
+        setPokemons([]);
         pokeApi = url;
         setPokeApi(pokeApi);
     };
@@ -60,9 +58,9 @@ const Search = () => {
     const handleSearch = (search) => {
         if(search){
             setPokeApi("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=2000");
-            setPokemons([]);//para que me limpie los pasados pokemones paginados
+            setPokemons([]);
             let allFilter = searchFilter(data, search);
-            let smallFilter = allFilter.slice(0,20);//filtrando del 0 al 19 ya que slice no incluye el final
+            let smallFilter = allFilter.slice(0,20);
             setDataFiltrada(smallFilter);
         };
     };
