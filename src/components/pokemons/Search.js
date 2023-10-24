@@ -1,6 +1,6 @@
 import SearchBar from "../sections/SearchBar";
-import PokeCard from "../cards/pokemonCard";
-import Loader from "./Loader";
+import PokeCard from "./pokemonCard";
+import Loader from "../containers/Loader";
 import { useFetch } from '../../hooks/useFetch';
 import { useState, useEffect } from 'react';
 

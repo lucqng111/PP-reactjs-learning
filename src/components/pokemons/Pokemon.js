@@ -1,9 +1,9 @@
-import Result from "../sections/Result";
+import Result from "./Result";
 import { useNavigate, useParams } from "react-router-dom"
 import { useFetch } from "../../hooks/useFetch";
 import { useState, useEffect } from "react";
-import Loader from "./Loader";
-import Message from "./Message";
+import Loader from "../containers/Loader";
+import Message from "../containers/Message";
 import {  toast } from 'react-toastify';
 
 

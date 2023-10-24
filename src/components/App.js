@@ -6,10 +6,10 @@ import {
 import "../styles/style.css"
 
 import Header from "./sections/Header";
-import Home from "./pages/Home";
-import Search from "./pages/Search";
-import Pokemon from "./pages/Pokemon";
-import PokemonCreationForm from "./pages/PokemonCreationForm";
+import Home from "./sections/Home";
+import Search from "./pokemons/Search";
+import Pokemon from "./pokemons/Pokemon";
+import PokemonCreationForm from "./pokemons/PokemonCreationForm";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
